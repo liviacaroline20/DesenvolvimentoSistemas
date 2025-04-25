@@ -1,0 +1,17 @@
+let nota01= 60;
+let nota02= 40;
+let nota03= 50;
+let nota04= 70;
+
+media = (nota01, nota02, nota03, nota04) / 4;
+
+if(media >= 60){
+    console.log("A nota é:" , media, "O aluno está aprovado.")
+}
+else if(media < 40){
+    console.log("A nota é:" , media, "aluno está reprovado.")
+}
+else{
+    console.log("A nota é:" , media, "O aluno está em recuperação.")
+}
+
