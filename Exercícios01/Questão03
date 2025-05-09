@@ -12,7 +12,5 @@
     } else {
       aliquota = 32;
     }
-
-    console.log("O salário de R$${salario.toFixed(2)} se encaixa na alíquata de $ {aliquata}%.");
     
   
