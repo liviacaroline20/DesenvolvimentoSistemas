@@ -1,3 +1,5 @@
+// Exercício 03 - Faça um programa que leia 3 números e mostre se o valor de sua soma é par ou ímpar. 
+
 let n1 = 3;
 let n2 = 2;
 let n3 = 6; 
