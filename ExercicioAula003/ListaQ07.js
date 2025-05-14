@@ -1,16 +1,11 @@
-// Exercício 07: Faça uma função que receba o salário de um trabalhador e o empréstimo, verifique se o empréstimo é de até 20% do salário do trabalhador, se for, o empréstimo deve ser aprovado, caso contrário, deve ser rejeitado. 
+// Exercício 07: Faça um programa que leia um numero e verifique se ele está no intervalo de 5 e 9. Caso esteja, informe ao usuário.
 
-function calcularEmprestimo(salario, emprestimo) {
-    salario = 1000; 
-    emprestimo = 150; 
-    let porcentagemSalario = salario * 0.2; 
+let n1 = 6; 
 
-    if (emprestimo > porcentagemSalario) {
-        console.log('O emprestimo foi negado.');
-    }
-    else { 
-        console.log('O emprestimo foi aprovado.'); 
-    }
+if(n1 >= 5 && n1 <=9){
+    console.log('esse numero está no intervalo entre 5 e 9');
 }
 
-calcularEmprestimo(1000, 700);
+else {
+    console.log('esse numero NÃO está no intervalo entre 5 e 9');
+}

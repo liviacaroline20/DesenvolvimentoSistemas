@@ -1,9 +1,10 @@
-let salario = 1000; 
-let emprestimo = 100; 
-let conta ; 
- conta = ( salario-0.020)
+let salario = 2500; 
+let emprestimo = 6000; 
+let porcentagemSalario = salario * 0.2; 
 
- if( emprestimo <= conta) {
-    console.log("O emprestimo será concedido.")
+ if( emprestimo > porcentagemSalario) {
+    console.log('Emprestimo NÃO concedido.')
  }
-else(console.log("O emprestimo não foi concedido."))
+else{
+   (console.log("Emprestimo concedido."))
+}

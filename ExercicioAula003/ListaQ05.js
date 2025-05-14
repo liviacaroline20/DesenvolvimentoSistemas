@@ -1,12 +1,11 @@
-// Exercício 05: Elabore uma função que verifique se o número é par ou ímpar. 
+// Exercício 05: Faça um programa que leia um numero e mostre se ele é positivo ou negativo.
 
-function parImpar(n){
-   if(n % 2 == 0) {
-    return 'é par'; 
-   }
-   else { 
-    return 'é ímpar'; 
-   }
+let n1 = -4; 
+
+if ( n1 >= 0){
+   console.log('esse numero é positivo');
 }
-console.log(parImpar(7));
+else {
+   console.log('esse numero é negativo');
+}
 
