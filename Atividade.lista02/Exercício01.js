@@ -1,13 +1,11 @@
 // 01. Crie uma função que receba dois números e retorne a soma deles. 
 
-let n1 = 4;
-let n2 = 6;
-let = soma; 
+let n1 = 5;
+let n2 = 3;
+let = somar;
 
-fuction soma (n1 + n2){
-    console.log('A soma')
+function somar(n1, n2) {
+    return n1 + n2;
 }
-
-return{
-    (n1 + n2)
-} 
+let resultado = somar(5, 3);
+console.log(resultado); 
