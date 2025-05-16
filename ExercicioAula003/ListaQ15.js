@@ -1,28 +1,42 @@
-let nota1 = 70; 
-let nota2 = 60;
-let nota3 = 50; 
+let a = 10;
+let b = -3;
+let c = 5.5;
 
+// Verificando A
+if (a % 1 === 0) {
+  console.log("a é inteiro");
+} else {
+  console.log("a não é inteiro");
+}
 
+if (a >= 0) {
+  console.log("a é positivo");
+} else {
+  console.log("a é negativo");
+}
 
-function verificarSituacaoAluno(nota1, nota2, nota3) {
-  if (
-    nota1 < 0 || nota1 > 100 ||
-    nota2 < 0 || nota2 > 100 ||
-    nota3 < 0 || nota3 > 100
-  ) {
-    console.log("Notas inválidas. Todas as notas devem estar entre 0 e 100.");
-    return;
-  }
+// Verificando B
+if (b % 1 === 0) {
+  console.log("b é inteiro");
+} else {
+  console.log("b não é inteiro");
+}
 
-  const media = (nota1 + nota2 + nota3) / 3;
+if (b >= 0) {
+  console.log("b é positivo");
+} else {
+  console.log("b é negativo");
+}
 
-  console.log("Média:", media.toFixed(2));
+// Verificando C
+if (c % 1 === 0) {
+  console.log("c é inteiro");
+} else {
+  console.log("c não é inteiro");
+}
 
-  if (media >= 70) {
-    console.log("Situação: Aprovado");
-  } else if (media < 40) {
-    console.log("Situação: Reprovado");
-  } else {
-    console.log("Situação: Em recuperação");
-  }
+if (c >= 0) {
+  console.log("c é positivo");
+} else {
+  console.log("c é negativo");
 }
