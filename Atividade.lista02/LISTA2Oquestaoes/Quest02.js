@@ -1,7 +1,6 @@
 // 2. Crie uma função chamada dobro que receba um número como argumento e retorne o dobro desse número.
 
-function dobro(numero) {
-  return numero * 2;
+function dobro(n1) {
+  return 2 * n1;
 }
-const resultado = dobro(7);
-console.log("O dobro é:", resultado); 
+console.log(dobro (5)); 

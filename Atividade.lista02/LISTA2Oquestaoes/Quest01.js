@@ -1,7 +1,8 @@
 // 1. Crie uma função que receba dois números e retorne a soma deles. 
 
-function somar(a, b) {
-  return a + b;
+function somar(n1, n2) {
+  return n1 + n2; 
 }
-const resultado = somar(5, 3);
-console.log("A soma é:", resultado);
+console.log(soma(5, 7)); 
+console.log(soma(9, 7)); 
+console.log(soma(10, 7)); 
