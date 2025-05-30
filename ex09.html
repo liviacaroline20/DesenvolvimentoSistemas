@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <b>09</b>
+        9. Faça um programa que leia várias palavras distintas até que seja digitada uma String vazia “”.
+Após isso, o programa deve exibir a palavra de menor e a de maior tamanho. O tamanho de uma
+String é determinada pelo número de caracteres que ele possui.
+    </p>
+    <script>
+        let palavra;
+        let menorPalavra = null;
+        let maiorPalavra = null;
+
+        do {
+            palavra = prompt("Digite uma palavra (ou deixe em branco para encerrar):"). trim();
+            if (palavra !== "") {
+                if (menorPalavra === null) {
+                    menorPalavra = palavra;
+                } else if (palavra.length < menorPalavra.length) {
+                    menorPalavra = palavra;
+                }
+                }
+        } while (palavra !== ""); 
+        if (menorPalavra !== null){
+            document.writeln(`<h1>Palavra de menor tamanho: ${menorPalavra}</h1>`);
+        } else {
+            document.writeln("<h1>Nenhuma palavra foi digitada.</h1>");
+        }
+        
+    </script>
+</body>
+</html>

@@ -2,28 +2,32 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    
     <title>Document</title>
 </head>
 <body>
-    <p>
-        <b>07</b>
-        7. Faça um programa que leia n números e depois exibia a média aritmética desses n números até
-que o usuário digite valor 0;
-    </p>
-    <script>
-        media = 0;  
-        soma = 0; 
-        while (true) {
-            let n = Number(prompt("Digite um número:"));
-            
-            soma += n; 
-            media = soma / media;
-             if (n == 0) {
-                break;
-            }
-        }
-        document.writeln(`<h1>Total: ${soma}</h1>`);   
+  <p>
+    <b>07)Faça um programa que leia n números e depois exibia a média aritmética desses n números até
+que o usuário digite valor 0;</b>
+  </p>
+<script>
+  let soma = 0;
+let quantidade = 0;
+let numero;
 
-    </script>
+do {
+  numero = Number(prompt("Digite um número (0 para encerrar):"));
+
+  if (numero !== 0) {
+    soma += numero;
+    quantidade++;
+    media = soma/quantidade
+  }
+    
+} while (numero !== 0);
+document.writeln(`<h1>Total: ${media}</h1>`)
+
+</script>
+   
 </body>
 </html>
