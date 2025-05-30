@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+</head>
+<body>
+     <p>
+        <b>12</b>
+       Faça um programa que leia um número inteiro, exiba todos os números a partir dele até o 0
+(zero), seja ele positivo ou negativo;
+    </p>
+    <script>
+       let n = prompt(" digite o numero: ")
+       if( n > 0){
+        for (let i = n ; i >= 0; i--) {
+         document.writeln(`<h1>palavra: ${i}</h1>`)
+        
+        }
+    } 
+        else  for (let i = n; i <= 0; i++) {
+                document.writeln(i);
+            }
+    </script>
+</body>
+</html>
