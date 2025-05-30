@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <b>07</b>
+        7. Faça um programa que leia n números e depois exibia a média aritmética desses n números até
+que o usuário digite valor 0;
+    </p>
+    <script>
+        media = 0;  
+        soma = 0; 
+        while (true) {
+            let n = Number(prompt("Digite um número:"));
+            
+            soma += n; 
+            media = soma / media;
+             if (n == 0) {
+                break;
+            }
+        }
+        document.writeln(`<h1>Total: ${soma}</h1>`);   
+
+    </script>
+</body>
+</html>
