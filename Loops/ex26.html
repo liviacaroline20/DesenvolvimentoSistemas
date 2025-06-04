@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Document</title>
+</head>
+<body>
+  <p>
+    <b>26</b>
+     26 desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer numero inteiro entre 1 a 10. o usuario deve informar de qual numero ele deseja ver a tabuada.
+  </p>  
+  <script>
+
+    
+   let n01 = prompt(" digite o numero que deseja ver a tabuada: ")
+
+    for ( let i = 1; i <=10 ; i++){
+        if( n01 > 0 || n01 <= 10){
+            multiplicar = i*n01
+            document.writeln( "<br>" +i + " x " + n01 + " = " + multiplicar)
+        }
+      
+    }
+  </script>
+</body>
+</html>

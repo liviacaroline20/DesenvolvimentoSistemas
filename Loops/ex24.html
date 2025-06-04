@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <b>24</b>
+        Faça um programa que leia 20 valores e no final escreva o maior e o menor valor lido.
+    </p>
+    <script>
+        
+        let nMaior = 0;
+        let nMenor = 0;
+
+        for( let i = 1 ; i <= 20; i++){
+            let numero = Number(prompt(" digite um numero!"));
+            if (i === 1){
+                nMaior = numero;
+                nMenor = numero;
+            }
+            if (numero > nMaior){
+                nMaior = n;
+            }
+            if( numero < nMenor){
+                nMenor = numero;
+            }
+        }
+        document.writeln( " maior:" + nMaior);
+        document.writeln(" menor: " + nMenor);
+    </script>
+</body>
+</html>

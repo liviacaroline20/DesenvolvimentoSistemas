@@ -1,23 +1,26 @@
-|<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+   
     <title>Document</title>
 </head>
 <body>
-    <p>
-        <b>17. Faça um programa para ler, calcular e exibir a média de duas notas válidas de 10 alunos
-digitados pelo usuário.</b>
+      <p>
+        <b>17</b>
+ Faça um programa para ler, calcular e exibir a média de duas notas válidas de 10 alunos digitados pelo usuário. 
     </p>
     <script>
-        qtdAlunos = 10;
-        soma = 0; 
-        media = 0; 
+     qtdAluno = 10;
+      soma = 0;
+      media = 0 ;
+      
+      for ( let i = 0 ; i <= qtdAluno; i ++ ){
+        let nota01 = prompt(" digite a nota: ")
+        let nota02 = prompt (" digite a segunda  nota: ")
 
-        do {
-         let nota1 = prompt("Digite a primeira nota do aluno: ");
-        } while (qtdAlunos > 0); 
-        
+        soma = nota01 + nota02
+         media = soma / qtdAluno;
+      }document.writeln( " a media sera: " + media )
+
     </script>
-</body>
-</html>

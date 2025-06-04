@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Document</title>
+</head>
+<body>
+  <h2>Calculadora de Potência</h2>
+  <label for="base">Digite a base (número inteiro): </label>
+  <input type="number" id="base"><br><br>
+
+  <label for="expoente">Digite o expoente (número inteiro): </label>
+  <input type="number" id="expoente"><br><br>
+
+  <button onclick="calcularPotencia()">Calcular</button>
+
+  <p id="resultado"></p>
+
+  <script>
+    function calcularPotencia() {
+      let base = parseInt(document.getElementById("base").value);
+      let expoente = parseInt(document.getElementById("expoente").value);
+      let resultado = 1;
+
+      let positivo = true;
+      if (expoente < 0) {
+        positivo = false;
+        expoente = -expoente;
+      }
+
+      for (let i = 0; i < expoente; i++) {
+        resultado *= base;
+      }
+
+      if (!positivo) {
+        resultado = 1 / resultado;
+      }
+
+      document.getElementById("resultado").innerText =
+        "Resultado: " + resultado;
+    }
+  </script>
+</body>
+</html>
