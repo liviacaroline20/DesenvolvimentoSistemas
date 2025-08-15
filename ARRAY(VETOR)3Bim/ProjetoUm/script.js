@@ -3,9 +3,8 @@ let array = [];
 console.log("Tipo do meu array:" + typeof(array));
 
 function adicionarNumero(){
-    let input = document.querySelector('#numero');
+    let input = document.querySelector('#numero1');
     let n = parseInt(input.value); 
-    // alert(n);
     let exibirArray = document.querySelector
     ('#exibir-array');
 
@@ -14,7 +13,7 @@ function adicionarNumero(){
         alert('Digite um número válido!');
         return; 
     }
-
+    
     array.push(n); 
 
     // limpar o campo de entrada
