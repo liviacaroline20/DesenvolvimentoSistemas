@@ -4,4 +4,5 @@ let nomes = ['livia', 'helena', 'clara'];
 
 let existenome = nomes.includes("livia");
 
-l
+console.log(existenome);
+ 
