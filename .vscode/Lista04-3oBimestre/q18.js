@@ -2,6 +2,7 @@
 
 let numeros = [1, 3, 5, 4]; 
 
-let numeronegativo = numeromenor.some(numero => numero < 1);
+let numeronegativo = numeros.some(numeros => numeros < 1);
 
 console.log(numeronegativo);
+

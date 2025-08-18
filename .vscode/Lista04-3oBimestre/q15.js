@@ -2,6 +2,6 @@
 
 let numeros = [4, 6, 8, 10];
 
-let maiorNumero = numeros.find(numeros > 50); 
+let maiorNumero = numeros.find(numeros => numeros > 50); 
 
-co
+console.log(maiorNumero); 
